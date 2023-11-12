@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem, } from "react-pro-sidebar";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
@@ -53,6 +53,9 @@ const SidebarComponent = () => {
         "& .ps-active": {
           color: "#6870fa !important",
         },
+        "& .css-1wvake5": {
+          border: "none !important",
+        },
       }}
     >
       <Sidebar collapsed={isCollapsed}>
@@ -101,10 +104,10 @@ const SidebarComponent = () => {
                   fontWeight="bold"
                   sx={{ m: "10px 0 0 0" }}
                 >
-                  Ed Roh
+                  Saqib Ullah
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                  VP Fancy Admin
+                   Admin
                 </Typography>
               </Box>
             </Box>
