@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
-import { Sidebar, Menu, MenuItem, } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
@@ -20,7 +20,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   return (
-    <Link to={to} style={{ textDecoration: 'none' }}>
+    <Link to={to} style={{ textDecoration: "none" }}>
       <MenuItem
         active={selected === title}
         style={{
@@ -28,7 +28,6 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
         }}
         onClick={() => {
           setSelected(title);
-          console.log(`this is the route ${to}`);
         }}
         icon={icon}
       >
@@ -111,7 +110,7 @@ const SidebarComponent = () => {
                   Saqib Ullah
                 </Typography>
                 <Typography variant="h5" color={colors.greenAccent[500]}>
-                   Admin
+                  Admin
                 </Typography>
               </Box>
             </Box>
