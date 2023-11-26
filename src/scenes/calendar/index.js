@@ -26,6 +26,11 @@ const Calendar = () => {
     const calendarApi = selected.view.calendar;
     calendarApi.unselect();
 
+    console.log("******** this is selected object ");
+    console.log(`i am the selected title :${title}`)
+    console.log(selected);
+    console.log(calendarApi)
+
     if (title) {
       calendarApi.addEvent({
         id: `${selected.dateStr}-${title}`,
